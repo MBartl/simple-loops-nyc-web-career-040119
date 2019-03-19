@@ -8,7 +8,7 @@ def loop_iterator(number_of_times)
   loop do
     puts phrase
     counter += 1
-    break if counter = number_of_times
+    break if counter == number_of_times
   end
   
   # The integer is the number of times the loops should puts out the phrase
@@ -22,7 +22,8 @@ end
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  number_of_times.Times do
+  number = number_of_times
+  number.Times do
     puts phrase
   end
 end
